@@ -9,3 +9,17 @@ for _ in range(int(input())):
             if(pal(s[a:b+1]) and len(s[a:b+1])>=3):
                     print(a+1,s[a:b+1])
     print("")
+"""
+to run code -> python ActivitySet#3/problem#3.py
+
+sample input
+
+3
+7
+baabbab
+5
+bbacb
+10
+aabababaab
+
+"""
