@@ -1,3 +1,4 @@
+
 def get_cs():
     return(input())
 def cs_to_lot(cs):
