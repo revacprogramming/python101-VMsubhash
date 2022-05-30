@@ -12,7 +12,7 @@ def dict_to_cs(d):
   for a in range(1,len(d)):
     s+=";"+list(d.keys())[a]+"="+list(d.values())[a]
   return(s)
-def main():
+def main(): 
     cs = get_cs()
     d = cs_to_dict(cs) # convert connect string to a dictionary
     print(d)
