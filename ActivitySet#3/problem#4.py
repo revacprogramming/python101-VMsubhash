@@ -1,4 +1,4 @@
-def decod(l,n):
+def decode(l,n):
     d=[]
     while len(l)!=0:
         if(l[0]!=0):
@@ -20,7 +20,7 @@ def decod(l,n):
 for _ in range(int(input())):
     n=int(input())
     l=list(map(int,input().split()))
-    d=decod(l.copy(),n)
+    d=decode(l.copy(),n)
     for a in l:
         print(a,end=" ")
     print("")
