@@ -13,7 +13,7 @@ to run code -> python ActivitySet#3/problem#1.py
 sample input
 
 3
-0.0 0.0 0.0 1.0 1.0 0.0
+0.0 0.0 0.0 1.0 1.0   0.0
 -1.0 2.0 3.0 5.0 1.0 1.0
 5.0 9.0 -0.5 0.0 7.5 5.0
 """
