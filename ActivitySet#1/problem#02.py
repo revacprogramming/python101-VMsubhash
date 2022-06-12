@@ -1,4 +1,1 @@
-# Why Program
-
-print("hello world")
-pyth
+print('hello world')
