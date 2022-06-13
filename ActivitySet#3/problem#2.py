@@ -3,7 +3,7 @@ def find_fraction(l):
   den=1
   num=0
   for i in l:
-    den*=i
+    den=den*i
   for i in l:
     num+=den/i
   hcf=math.gcd(int(num),int(den))

@@ -1,27 +1,17 @@
 class Menu:
     def __init__(self):
-      return None
-    def add(self,id,value):
-      if id in self.foods:
-        self.foods[id]+=value
+      self.foods={}
+    def __add__(self,x):
+      if(x[0] in self.foods):
+        self.foods[x[0]]+=x[1]
       else:
-        self.foods[id]=value
-      return None
-    def show(self):
-      c=list(self.foods().copy())
-      for i in c:
-        print(i[0],i[1])
+        self.foods[x[0]]=x[1]
+      return self
+    def __str__(self):
+      k=""
+      for a in self.foods:
+        k+=(f"{a} => {self.foods[a]}\n")
+      return(k[:-1])
 m = Menu()
-m.add("idly", 10)
-m.add("vada". 20)
-m.show()
-
-
-class Menu:
-    """fill in class definition here"""
-
-
-m = Menu()
-m = m + ("idly", 10) + ("vada", 20)  # Hint: operator overloading special methods (__add__, __sub__, etc.)
-
-print(m)  # should print the menu properly
+m = m + ("idly", 10)+ ("vada",20) 
+print(m)
