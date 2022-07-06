@@ -1,8 +1,7 @@
 fname = input("Enter file name: ")
 fh = open(fname,"r")
-c=fh.readlines()
 dic={}
-for i in c.copy():
+for i in fh:
     if(i[:5]=="From "):
         k=i.split()
         if(k[1] in dic):
