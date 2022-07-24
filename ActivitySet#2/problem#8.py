@@ -14,6 +14,6 @@ class Menu:
       k+=(f"{a} => {self.foods[a]}\n")
     return(k[:-1])
 m = Menu()
-m["idly"] = 10
+m["idly"]=10
 m["vada"] = 20
 print(m)
